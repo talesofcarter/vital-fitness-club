@@ -1,0 +1,357 @@
+* {
+  box-sizing: 0;
+}
+
+body {
+  margin-top: 50px;
+  padding: 0 200px;
+  color: #71717a;
+  display: flex;
+  background-color: #1db954;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+  gap: 50px;
+}
+
+.layout {
+  display: flex;
+  gap: 50px;
+}
+
+.header-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #148a3b;
+  height: 150px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 50px;
+  overflow-y: auto;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  background:white;
+  width: 450px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.info-wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background:white;
+  width: 450px;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.header-section h1 {
+  text-align: center;
+  color: white;
+}
+
+.create-account-header {
+  text-align: center;
+}
+
+.label-container label {
+  color: #3f3f46;
+}
+
+.signup-info-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.label-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1.2px solid #1db954;
+}
+
+.info {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 20px;
+  padding: 10px;
+  border: 1px solid #1db954;
+  border-radius: 10px;
+}
+
+.info:focus {
+  outline: 1.2px solid #1db954;
+}
+
+.submit-button {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: white;
+  background: #1db954;
+  width: 100%;
+  padding: 20px 0;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  
+}
+
+.submit-button:hover {
+  background-color:#148a3b;
+  border: 1px solid white;
+}
+
+
+.socials-buttons-section {
+  display: flex;
+  gap: 10px;
+}
+
+.facebook-button,
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  width: 300px;
+  padding: 20px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+}
+
+.facebook-button {
+  background: #f7f7f7;
+}
+
+.facebook-button:hover {
+background: #d4d4d4;
+}
+
+.google-button {
+  background-color: #ffe7e5;
+}
+
+.google-button:hover {
+  background: #e6c6c4; 
+}
+
+.facebook-button span {
+  color: #1877F2;
+}
+
+.google-button span {
+  color: #e57368;
+}
+
+.facebook-button span,
+.google-button span {
+  font-size: 10px;
+}
+
+label {
+  display: flex;
+  gap: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.terms-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.terms-container p {
+  font-size: 12px;
+}
+
+
+.terms-of-services {
+  color:#1db954;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.terms-of-services:hover {
+  color: #148a3b;
+}
+
+ input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #1db954;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+ input[type="checkbox"]:checked {
+  background-color: #1db954;
+}
+
+ input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.google-logo,
+.facebook-logo {
+  width: 24px;
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #1db954;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  background-color: #1db954;
+}
+
+input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 3.5px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.info-container p,
+.info-container div {
+  color: white;
+  background:#1db954;
+  padding: 30px 10px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.close-sign {
+  background: #393939;
+  width: 24px;
+  border-radius: 50%;
+  padding: 3px;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  cursor: pointer;
+}
+
+.dataform {
+  position: fixed;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 20px; /* Reduce padding for smaller screens */
+    margin-top: 20px;
+  }
+
+  main, .layout {
+    flex-direction: column; /* Stack layout vertically */
+    gap: 20px;
+  }
+
+  .form-wrapper, .info-wrapper {
+    width: 100%; /* Make containers take the full width */
+    box-shadow: none; /* Simplify shadow for smaller screens */
+  }
+
+  .header-section {
+    height: 100px; /* Reduce header height */
+  }
+
+  .info-container p, .info-container div {
+    font-size: 14px; /* Adjust font size for readability */
+    padding: 20px 10px;
+  }
+
+  .signup-container {
+    gap: 20px; /* Reduce spacing between elements */
+    padding: 20px;
+  }
+
+  .socials-buttons-section {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px;
+  }
+
+  .facebook-button, .google-button {
+    width: 100%; /* Full-width buttons */
+    padding: 15px 10px;
+  }
+
+  input[type="checkbox"], input[type="radio"] {
+    width: 16px; /* Adjust size */
+    height: 16px;
+  }
+
+  input[type="text"], input[type="password"], input[type="email"], fieldset {
+    width: 90%;
+  }
+
+  .header-section h1,
+  .create-account-header {
+    font-size: 16px;
+  }
+  
+}
+

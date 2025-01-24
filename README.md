@@ -6,7 +6,8 @@ Welcome to the **Vital Fitness Club** signup page repository! This project is a 
 - **Interactive Design**: A user-friendly and visually appealing signup form.  
 - **Animations with Framer Motion**: Smooth animations to enhance the user experience.  
 - **Responsive Layout**: Optimized for desktop and mobile devices.  
-- **Modern Technologies**: Built with React, HTML, CSS, and JavaScript.  
+- **Modern Technologies**: Built with React, HTML, CSS, and JavaScript.
+- **Powered by Vite**: Fast development environment for improved coding and build efficiency. 
 
 ## 🛠️ Technologies Used  
 - **React**: For building the user interface.  
